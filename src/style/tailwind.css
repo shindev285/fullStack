@@ -1,0 +1,264 @@
+/* src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. Kích thước */
+.h-screen {
+  height: 100vh; /* Tailwind: h-screen */
+}
+
+.w-screen {
+  width: 100vw; /* Tailwind: w-screen */
+}
+
+.min-h-screen {
+  min-height: 100vh; /* Tailwind: min-h-screen */
+}
+/* 2. Đổ bóng */
+.get-shadow1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Tailwind: shadow-sm */
+}
+
+.get-shadow2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Tailwind: shadow-md */
+}
+
+.get-shadow3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* Tailwind: shadow-lg */
+}
+
+.get-shadow4 {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.22), 0 10px 10px rgba(0, 0, 0, 0.2); /* Tailwind: shadow-xl */
+}
+
+.get-shadow5 {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 15px 12px rgba(0, 0, 0, 0.22); /* Tailwind: shadow-2xl */
+}
+/* 3. Căn giữa */
+.center-block {
+  display: block; /* Tailwind: block */
+  margin-left: auto; /* Tailwind: mx-auto */
+  margin-right: auto; /* Tailwind: mx-auto */
+}
+
+.center-inline {
+  display: inline-block; /* Tailwind: inline-block */
+  margin-left: auto; /* Tailwind: mx-auto */
+  margin-right: auto; /* Tailwind: mx-auto */
+}
+
+.flex-center {
+  display: flex; /* Tailwind: flex */
+  justify-content: center; /* Tailwind: justify-center */
+  align-items: center; /* Tailwind: items-center */
+}
+
+.flex-centerc {
+  display: flex; /* Tailwind: flex */
+  flex-direction: column; /* Tailwind: flex-col */
+  justify-content: center; /* Tailwind: justify-center */
+  align-items: center; /* Tailwind: items-center */
+}
+/* Bố cục Flex */
+.flex-image {
+  display: flex; /* Tailwind: flex */
+  justify-content: space-between; /* Tailwind: justify-between */
+  align-items: center; /* Tailwind: items-center */
+}
+
+.flex-col {
+  display: flex; /* Tailwind: flex */
+  flex-direction: column; /* Tailwind: flex-col */
+}
+
+.fa-center {
+  display: flex; /* Tailwind: flex */
+  align-items: center; /* Tailwind: items-center */
+}
+
+.grid-center {
+  display: grid; /* Tailwind: grid */
+  place-items: center; /* Tailwind: place-items-center */
+}
+/* 5. Vị trí tuyệt đối */
+.abs-center {
+  position: absolute; /* Tailwind: absolute */
+  top: 50%; /* Tailwind: top-1/2 */
+  left: 50%; /* Tailwind: left-1/2 */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Tailwind: -translate-x-1/2 -translate-y-1/2 */
+}
+
+.abs-full {
+  position: absolute; /* Tailwind: absolute */
+  top: 0; /* Tailwind: top-0 */
+  left: 0; /* Tailwind: left-0 */
+  width: 100%; /* Tailwind: w-full */
+  height: 100%; /* Tailwind: h-full */
+}
+/* 6. Vị trí cố định */
+.fixed-full {
+  position: fixed; /* Tailwind: fixed */
+  top: 0; /* Tailwind: top-0 */
+  left: 0; /* Tailwind: left-0 */
+  width: 100%; /* Tailwind: w-full */
+  height: 100%; /* Tailwind: h-full */
+}
+
+.abs-dropdown {
+  position: absolute; /* Tailwind: absolute */
+  z-index: 999; /* Tailwind: z-50 */
+}
+/* 7. Kiểu chữ */
+.text-truncate {
+  overflow: hidden; /* Tailwind: truncate */
+  text-overflow: ellipsis; /* Tailwind: truncate */
+  display: -webkit-box; /* Tailwind: truncate */
+  -webkit-line-clamp: 3; /* Tailwind: truncate */
+  -webkit-box-orient: vertical; /* Tailwind: truncate */
+}
+
+.text-style {
+  font-style: italic; /* Tailwind: italic */
+  font-weight: bold; /* Tailwind: font-bold */
+}
+
+.text-gradient {
+  background: linear-gradient(
+    to right,
+    #30cfd0 0%,
+    #330867 100%
+  ); /* Tailwind: custom */
+  -webkit-background-clip: text; /* Tailwind: custom */
+  -webkit-text-fill-color: transparent; /* Tailwind: custom */
+}
+/* 8. Bố cục lưới */
+.grid-layout {
+  display: grid; /* Tailwind: grid */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Tailwind: grid-cols-[repeat(auto-fill,minmax(200px,1fr))] */
+}
+/* 9. Quản lý overflow */
+.o-hidden {
+  overflow: hidden; /* Tailwind: overflow-hidden */
+}
+
+.x-hidden {
+  overflow-x: hidden; /* Tailwind: overflow-x-hidden */
+}
+
+.y-hidden {
+  overflow-y: hidden; /* Tailwind: overflow-y-hidden */
+}
+/* 10. Chuyển đổi văn bản */
+.uppercase {
+  text-transform: uppercase; /* Tailwind: uppercase */
+}
+
+.lowercase {
+  text-transform: lowercase; /* Tailwind: lowercase */
+}
+
+.capitalize {
+  text-transform: capitalize; /* Tailwind: capitalize */
+}
+
+.bold {
+  font-weight: bold; /* Tailwind: font-bold */
+}
+
+.italic {
+  font-style: italic; /* Tailwind: italic */
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none; /* Tailwind: scrollbar-hidden */
+  -ms-overflow-style: none; /* Tailwind: scrollbar-hidden */
+}
+
+.input::placeholder {
+  color: #aaa; /* Tailwind: placeholder-gray-400 */
+}
+
+.input {
+  caret-color: red; /* Tailwind: custom */
+}
+
+.img-responsive {
+  width: 100%; /* Tailwind: w-full */
+  height: auto; /* Tailwind: h-auto */
+}
+
+.grid-scroll-snap {
+  scroll-snap-type: x mandatory; /* Tailwind: custom */
+  overflow-x: scroll; /* Tailwind: overflow-x-auto */
+}
+
+.modal-style {
+  background: rgba(0, 0, 0, 0.8); /* Tailwind: bg-black bg-opacity-80 */
+  position: fixed; /* Tailwind: fixed */
+  top: 50%; /* Tailwind: top-1/2 */
+  left: 50%; /* Tailwind: left-1/2 */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Tailwind: -translate-x-1/2 -translate-y-1/2 */
+}
+/* 18. Hiện/Ẩn CSS */
+.css-hide {
+  display: none; /* Tailwind: hidden */
+  opacity: 0; /* Tailwind: opacity-0 */
+}
+
+.css-show {
+  display: block; /* Tailwind: block */
+  opacity: 1; /* Tailwind: opacity-100 */
+}
+/* 22. Kiểu thanh cuộn */
+.scrollbar-style {
+  scrollbar-color: #888 #333; /* Tailwind: custom */
+  scrollbar-width: thin; /* Tailwind: custom */
+}
+/* 23. Kích thước hình dạng */
+.square {
+  width: 100px; /* Tailwind: w-24 */
+  height: 100px; /* Tailwind: h-24 */
+}
+
+.rect {
+  width: 200px; /* Tailwind: w-48 */
+  height: 100px; /* Tailwind: h-24 */
+}
+
+.circle {
+  width: 100px; /* Tailwind: w-24 */
+  height: 100px; /* Tailwind: h-24 */
+  border-radius: 50%; /* Tailwind: rounded-full */
+}
+
+/* 24. Chiều rộng và chiều cao */
+.w-full {
+  width: 100%; /* Tailwind: w-full */
+}
+
+.h-full {
+  height: 100%; /* Tailwind: h-full */
+}
+
+.s-full {
+  width: 100%; /* Tailwind: w-full */
+  height: 100%; /* Tailwind: h-full */
+}
+
+.pointer {
+  cursor: pointer; /* Tailwind: cursor-pointer */
+}
+
+.pointer-none {
+  pointer-events: none; /* Tailwind: pointer-events-none */
+}
