@@ -1,0 +1,115 @@
+.header{
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+}
+.logo-wraper img{
+  width: 100%;
+}
+.country-dropdown{
+  width: 170px;
+  height: 60px;
+  min-width: 170px;
+  text-align: left;
+  justify-content: flex-start !important;
+  color: #000 !important; 
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 8px;
+  padding: 10px !important;
+}
+.lable{
+  font-size: 12px;
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+  line-height: 16px;
+}
+.name{
+  font-size: 14px;
+  text-transform: capitalize !important;
+  color: rgba(16, 175, 238, 0.6) !important;
+  font-weight: 700;
+  line-height: 16px;
+}
+.ml-auto svg{
+  opacity: 0.7;
+}
+
+.header-search{
+  width: 55%;
+  height: 60px;
+  background: #f3f4f7;
+  padding: 10px;
+  border-radius: 8px;
+  border-radius: 1px solid rgba(0,0,0,0.5);
+  position: relative;
+}
+.header-search input{
+  background: transparent !important;
+  outline: none !important;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 40px;
+  border: 0px !important;
+  padding: 0px 25px !important;
+}
+.header-search button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  color: #000 !important;
+  outline: none !important;
+}
+.header-search button svg{
+  font-size: 30px;
+}
+/* .part-3 {
+
+} */
+.circle{
+  align-items: center;
+  justify-content: center;
+  min-width: 50px !important;
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  color: #000;
+}
+.circle svg{
+  font-size: 23px;
+  color: #000 !important;
+}
+.cart-item .price{
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+}
+.cart-item button{
+  background: #fff1ee !important;
+
+}
+.cart-item button svg{
+  color: #ec5e5e !important;
+}
+.count{
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  background-color: #ec2727;
+  border-radius: 50%;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+}
+
+.all-CatTab{
+  background: rgb(94, 224, 241) ;
+  padding: 8px 20px !important;
+  
+}

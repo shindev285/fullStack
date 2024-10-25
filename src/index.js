@@ -6,6 +6,7 @@ import App from "@/App";
 import "@/style/tailwind.css";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap 4.1.3 CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "@/style/index.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
